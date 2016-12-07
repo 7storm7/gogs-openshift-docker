@@ -179,8 +179,6 @@ objects:
             mountPath: /var/tmp
           - name: gogs-repositories
             mountPath: /home/gogs/gogs-repositories
-          - name: gogs-etc
-            mountPath: /etc/gogs/conf
         dnsPolicy: ClusterFirst
         restartPolicy: Always
         securityContext: {}
