@@ -192,12 +192,6 @@ objects:
         - name: gogs-repositories
           persistentVolumeClaim:
             claimName: gogs-repositories
-        - name: gogs-etc
-          configMap:
-            name: gogs-default-config
-            items:
-              - key: app.ini
-                path: app.ini
         livenessProbe:
             httpGet:
               path: /
